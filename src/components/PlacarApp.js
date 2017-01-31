@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Contador from './Contador';
+
 export default class PlacarApp extends React.Component {
-    render() {
-        return <h1>Olá Glaucia Lemos!</h1>;
-    }
+	render() {
+		return <Contador />;
+	}
 }
