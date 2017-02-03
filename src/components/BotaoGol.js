@@ -4,7 +4,8 @@ export default class BotaoGol extends React.Component {
     render() {
         return (
             <div>
-            </div>       
+                <button>Gol!</button>
+            </div>
         );
     }
 }
