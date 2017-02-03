@@ -25,3 +25,4 @@ export default class PlacarContainer extends React.Component {
 		);
 	}
 }
+
