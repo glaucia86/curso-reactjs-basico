@@ -15,7 +15,7 @@ export default class App extends React.Component {
 
 				<section className="section">
 					<div className="container">
-						<h1 className="title">Monstrando componente através do Router</h1>
+						{this.props.children}
 					</div>
 				</section>
 			</div>
