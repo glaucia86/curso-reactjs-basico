@@ -14,7 +14,7 @@ const dados = {
 	},
 
 	visitante: {
-		nome: "Vasco"
+		nome: "Fluminense"
 	}
 };
 
