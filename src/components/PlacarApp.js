@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Contador from './Contador';
+import PlacarContainer from './PlacarContainer';
 
 export default class PlacarApp extends React.Component {
 	render() {
-		return <Contador />;
+		return <PlacarContainer />;
 	}
 }
