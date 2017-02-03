@@ -3,7 +3,7 @@ import React from 'react';
 export default class Sobre extends React.Component {
 	render() {
 		return (
-			<div></div>
+			<h1 className="title">Sobre nós!</h1>
 		);
 	}
 };
