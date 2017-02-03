@@ -70,3 +70,23 @@ PlacarContainer.propTypes = {
 PlacarContainer.defaultProps = {
 	clima: 'Ensolarado'
 }
+
+/* Os Tipos de 'propTypes' mais importantes no React.Js
+
+	1) React.PropTyes.any
+	2) React.PropTyes.array,
+	3) React.PropTyes.bool,
+	4) React.PropTyes.func,
+	5) React.PropTyes.number,
+	6) React.PropTyes.object,
+	7) React.PropTyes.string,
+	8) React.PropTyes.instanceOf(Partida),
+	9) React.PropTyes.oneOf(['Flamengo', 'Fluminense']),
+	10) React.PropTyes.oneOfType([Time, Partida]),
+	11) React.PropTyes.arrayOf(React.PropTyes.string),
+	12) React.PropTyes.shape({
+			nome: React.PropTyes.string,	
+	})
+
+	Mais informações AQUI -->> https://facebook.github.io/react/docs/components-and-props.html
+ */
