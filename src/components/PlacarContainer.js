@@ -53,11 +53,20 @@ export default class PlacarContainer extends React.Component {
 						  gols={this.state.gols_visitante}
 						  marcarGol={this.marcarGolVisitante.bind(this)} />
 				</div>
-				<div style={{ clear: "both" }}>
-				
-				</div>
+				<div>{this.props.clima}</div>
+				<div style={{ clear: "both" }}></div>
 			</div>
 		);
 	}
 }
 
+/* O 'propTypes' serve justamente para pré definirmos o tipo que a propriedade será */
+PlacarContainer.propTypes = {
+	clima: React.PropTypes.string,
+	tempo: React.PropTypes.number.isRequired
+}
+
+/* O 'defaultProps' serve para deixar pré-definido um determinado valor */
+PlacarContainer.defaultProps = {
+	clima: 'Ensolarado'
+}
