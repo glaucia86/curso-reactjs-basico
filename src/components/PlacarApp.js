@@ -20,8 +20,8 @@ const dados = {
 
 export default class PlacarApp extends React.Component {
 	render() {
-		return <PlacarContainer partida={dados.partida}
-								casa={dados.casa}
-								visitante={dados.visitante} />;
+		/* O uso do '...dados' é uma maneira mais simplista para podermos acessar os dados criados acima
+		Isso se chama 'spread operator' mais info AQUI -->> http://migre.me/vZ7Il */
+		return <PlacarContainer {...dados} />;
 	}
 }

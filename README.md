@@ -9,6 +9,7 @@ Curso de React.Js Básico com a finalidade de aprender os conceitos básicos da 
 - Node.Js;
 - Boostrap Framework;
 - ES2015;
+- Spread Operator;
 - Flux Architecture;
 
 ## Executando a aplicação:
