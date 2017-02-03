@@ -1,0 +1,26 @@
+{
+  "name": "placar-app",
+  "version": "0.0.0",
+  "description": "Pequena aplicação para poder fixar os conhecimentos básicos sobre React.Js.",
+  "main": "src/app.js",
+  "dependencies": {
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "eslint": "^3.14.1",
+    "jslint": "^0.10.3",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --history-api-fallback --content-base public"
+  },
+  "author": "Glaucia Lemos",
+  "license": "MIT"
+}
