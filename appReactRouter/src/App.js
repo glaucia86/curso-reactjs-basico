@@ -5,14 +5,17 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './pages/App';
 import Sobre from './pages/Sobre';
 import Cursos from './pages/Cursos';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Curso from './components/Curso';
 
 ReactDOM.render((
 		<Router history={hashHistory}>
 			<Route path="/" component={App}>
 				<IndexRoute component={Home} />
-				<Route path="/cursos" component={Cursos}/>
-				<Route path="/sobre" component={Sobre}/>				
+				<Route path="cursos" component={Cursos}>
+					<Route path=":id" component={Curso}/>
+				</Route>
+				<Route path="sobre" component={Sobre}/>				
 			</Route>
 		</Router>
 	),
