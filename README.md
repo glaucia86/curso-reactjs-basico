@@ -11,6 +11,7 @@ Curso de React.Js Básico com a finalidade de aprender os conceitos básicos da 
 - ES2015;
 - Spread Operator;
 - Flux Architecture;
+- Bulma (Flexbox Framework to CSS);
 
 ## Executando a aplicação:
 

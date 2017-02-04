@@ -10,11 +10,13 @@ const dados = {
 	},
 
 	casa: {
-		nome: "Flamengo"
+		nome: "Flamengo",
+		escudo: "http://megaicons.net/static/img/icons_title/257/1547/title/flamengo-icon.png",
 	},
 
 	visitante: {
-		nome: "Fluminense"
+		nome: "Fluminense",
+		escudo:"https://upload.wikimedia.org/wikipedia/pt/0/07/Fluminense_logo.png",
 	}
 };
 

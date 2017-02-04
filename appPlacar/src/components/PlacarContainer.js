@@ -33,15 +33,16 @@ export default class PlacarContainer extends React.Component {
 	render() {
 
 		/* Aqui estamos extraindo dados para deixar o código mais clean */
-		const { partida, casa, visitante } = this.props;
+		const { partida, casa, visitante, escudo } = this.props;
 		const estilo = { float: "left", "marginRight": "20px" };
 
 		return (
 			<div>
 				<div style={estilo}>
-					<h3>Casa</h3>
+					<h2>Casa</h2>
 					<Time nome={casa.nome} 
 						  gols={this.state.gols_casa} 
+						  escudo={casa.escudo}
 						  marcarGol={this.marcarGolCasa.bind(this)} />
 				</div>
 				<div style={estilo}>
@@ -51,6 +52,7 @@ export default class PlacarContainer extends React.Component {
 					<h3>Visitante</h3>
 					<Time nome={visitante.nome} 
 						  gols={this.state.gols_visitante}
+						  escudo={visitante.escudo}
 						  marcarGol={this.marcarGolVisitante.bind(this)} />
 				</div>
 				<div>{this.props.clima}</div>
