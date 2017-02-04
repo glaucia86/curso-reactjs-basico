@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, IndexLink } from 'react-router';
 
 export default class App extends React.Component {
 
@@ -8,7 +8,7 @@ export default class App extends React.Component {
 			<div>
 				<nav className="nav has-shadow">
 					<div className="nav-left">
-						<a href="#" className="nav-item is-tab">Página Principal</a>
+						<IndexLink to="/" className="nav-item is-tab" activeClassName="is-active">Página Principal</IndexLink>
 						<Link to="/cursos" className="nav-item is-tab" activeClassName="is-active">Cursos</Link>
 						<Link to="/sobre" className="nav-item is-tab" activeClassName="is-active">Sobre</Link>
 					</div>
