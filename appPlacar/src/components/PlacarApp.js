@@ -11,7 +11,7 @@ const dados = {
 
 	casa: {
 		nome: "Flamengo",
-		escudo: "http://megaicons.net/static/img/icons_title/257/1547/title/flamengo-icon.png",
+		escudo: "https://cdn.awsli.com.br/401/401496/marca/568921/e2838f769d.png",
 	},
 
 	visitante: {

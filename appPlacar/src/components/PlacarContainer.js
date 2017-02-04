@@ -34,12 +34,12 @@ export default class PlacarContainer extends React.Component {
 
 		/* Aqui estamos extraindo dados para deixar o código mais clean */
 		const { partida, casa, visitante, escudo } = this.props;
-		const estilo = { float: "left", "marginRight": "20px" };
+		const estilo = { float: "left", "marginLeft": "330px" };
 
 		return (
 			<div>
 				<div style={estilo}>
-					<h2>Casa</h2>
+					<h3 className="subtitle has-text-centered">Casa</h3>
 					<Time nome={casa.nome} 
 						  gols={this.state.gols_casa} 
 						  escudo={casa.escudo}
@@ -47,16 +47,15 @@ export default class PlacarContainer extends React.Component {
 				</div>
 				<div style={estilo}>
 					<Partida {...partida} />
+					<div className="subtitle has-text-centered">{this.props.clima}</div>
 				</div>
 				<div style={estilo}>
-					<h3>Visitante</h3>
+					<h3 className="subtitle has-text-centered">Visitante</h3>
 					<Time nome={visitante.nome} 
 						  gols={this.state.gols_visitante}
 						  escudo={visitante.escudo}
 						  marcarGol={this.marcarGolVisitante.bind(this)} />
 				</div>
-				<div>{this.props.clima}</div>
-				<div style={{ clear: "both" }}></div>
 			</div>
 		);
 	}
